@@ -1,0 +1,415 @@
+/*
+Theme Name: Pink Xmas
+Theme URI: http://pure-essence.net/2013/04/18/child-theme-for-twenty-twelve-casually
+Author: Ying Zhang
+Author URI: http://regretless.com/
+Description: Pink Xmas builds off of Twenty Twelve, so you get all of the goodness of a WordPress core theme included.
+Version: 1.0.0
+Tags: light, pink, red, green, two-column, right-sidebar, flexible-width, threaded-comments, sticky-post, post-formats
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+template: twentytwelve
+*/
+
+@import url('../twentytwelve/style.css');
+
+/* =========================================================================
+ *   Causally
+ * ========================================================================= */
+
+/* customized by pure-essence.net */
+html body,
+html body.custom-background,
+html body.custom-font-enabled {
+    background-color: #72604E;
+    background-image: url(images/bk.png);
+    background-repeat: repeat;
+    background-position: left top;
+	background-attachment: fixed;
+    padding: 0;
+	color: #EDECBE;
+	font-family: "ABeeZee","Open Sans",Helvetica,Arial,sans-serif;
+}
+
+html body .site {
+	background: transparent;
+	margin: 25px auto;
+	padding: 0;
+	box-shadow: none;
+}
+
+body a {
+	color: #F99D9D;
+}
+
+body a:hover {
+	color: #D14267;
+}
+
+.entry-header 
+.entry-title,
+#masthead h1 {
+	font-family: "Leckerli One", serif;
+}
+
+#masthead {
+	background-image: url(images/houses.png), url(images/lines.png);
+	background-position: 25px top, right 122px;
+	background-repeat: no-repeat;
+	padding: 155px 0 0 0;
+	position: relative;
+}
+
+#masthead h1 {
+	position: absolute;
+	top: 50px;
+	right: 75px; 
+	background: url(images/bells.png) 280px bottom no-repeat;
+	height: 115px;
+	width: 460px;
+	text-align: right;
+	font-weight: normal;
+}
+#masthead h1 a,
+#masthead h1 a:hover {
+	color: #fff;
+}
+
+#masthead h2 {
+	color: #FAA0A0;
+	position: absolute;
+	top: 25px;
+	right: 75px;
+}
+
+#site-navigation {
+	padding: 18px 25px;
+	margin: 0;
+	background: #DF4E6D url(images/pinkBk.png) left top repeat-x;
+	border-color: #EDECBE;
+	border-style: solid;
+	border-width: 5px 0;
+}
+.main-navigation li {
+	margin: 0;
+}
+
+.main-navigation li a {
+	line-height: normal;
+}
+
+.main-navigation .current-menu-item > a, 
+.main-navigation .current-menu-ancestor > a, 
+.main-navigation .current_page_item > a, 
+.main-navigation .current_page_ancestor > a{
+	color: #fff;
+}
+
+.main-navigation ul > li a {
+	color: #EDECBE;
+	position: relative;
+	padding: 8px 17px;
+}
+.main-navigation ul > li a:after {
+	content: '';
+	width: 6px;
+	height: 6px;
+	border-radius: 3px;
+	position: absolute;
+	top: 40%;
+	right: -7px;
+	background: #FAA0A0;
+}
+.main-navigation li ul li a:after,
+.main-navigation ul > li:last-child a:after {
+	width: 0;
+	height: 0;
+}
+.main-navigation ul > li a:hover {
+	color: #fff;
+}
+
+#site-navigation ul.nav-menu, 
+#site-navigation div.nav-menu > ul {
+	border: 0;
+}
+
+.main-navigation li ul li a {
+	color: #564C49;
+	background: #EDECBE;
+	border: 0;
+	margin: 0 1px 1px 0;
+	padding: 5px 10px;
+}
+
+.main-navigation li ul li a:hover {
+	background-color: #CECE84;
+}
+
+article.sticky .featured-post {
+	border: 0;
+	background-image: url(images/borderSnow.png);
+	background-position: right bottom;
+	background-repeat: no-repeat;
+	color: #fff;
+	line-height: 64px;
+	font-family: "Leckerli One", serif;
+	font-size: 1.2em;
+	margin: -15px -14px 15px -15px;
+	border-bottom: 1px solid #72604E;
+	border-radius: 10px 10px 0 0;
+	text-align: left;
+	padding-left: 15px;
+}
+
+#primary article {
+	background: rgba(128,109,93,.9);
+	border-radius: 10px;
+	border: 0;
+	padding: 1em;
+}
+
+.entry-header .entry-title a,
+.entry-header .entry-title a:hover {
+	color: #FAA0A0;
+}
+#secondary aside {
+	background: rgba(128,109,93,.8);
+	border-radius: 10px;
+	padding: 1em;
+	position: relative;
+}
+#secondary aside:nth-of-type(4n):before {
+	content: url(images/snowflake1.png);
+	position: absolute;
+	right: 10px;
+	top: -18px;
+}
+#secondary aside:nth-of-type(4n-1):before {
+	content: url(images/roof2.png);
+	position: absolute;
+	right: 10px;
+	top: -37px;
+}
+#secondary aside:nth-of-type(4n-2):before {
+	content: url(images/snowflake2.png);
+	position: absolute;
+	right: 10px;
+	top: -20px;
+}
+#secondary aside:nth-of-type(4n-3):before {
+	content: url(images/roof3.png);
+	position: absolute;
+	right: 10px;
+	top: -27px;
+}
+#secondary aside:first-child:before {
+	content: normal;
+}
+#secondary aside ul {
+	margin-left: 1.5em;
+	list-style-image:url(images/snow.png);
+}
+.archive-title, .page-title, .widget-title, .entry-content th, .comment-content th {
+	color: #fff;
+}
+.widget-area .widget h3 {
+	margin: 0;
+}
+.widget-area .widget a {
+	color: #FAA0A0;
+}
+.widget-area .widget a:hover {
+	color: #fff;
+}
+.comments-link a, 
+.entry-meta a,
+footer.entry-meta a,
+footer.entry-meta,
+.wp-caption .wp-caption-text, 
+.gallery-caption, 
+.entry-caption {
+	color: #493d32;
+}
+.comments-link a:hover, 
+.entry-meta a:hover,
+footer.entry-meta a:hover {
+	color: #564637;
+}
+
+body #gallery-1 img,
+body #gallery-2 img,
+body #gallery-3 img,
+body #gallery-4 img,
+body #gallery-5 img,
+body #gallery-6 img,
+body #gallery-7 img,
+body #gallery-8 img,
+body #gallery-9 img,
+body #gallery-10 img,
+body #gallery-11 img {
+	border: 0;
+}
+
+article.format-aside .aside {
+	background: rgba(255,255,255,.5);
+	border-color: #897667;
+}
+article.format-link header {
+	background-color: #897667;
+	color: rgba(255,255,255,.5);
+}
+article.format-quote .entry-content blockquote {
+	background:#634939;
+	color: #897667;
+}
+
+.format-status .entry-header header a {
+	color: #634939;
+}
+.format-status .entry-header header a:hover {
+	color: rgba(255,255,255,.5);
+}
+.menu-toggle, input[type="submit"], input[type="button"], input[type="reset"], article.post-password-required input[type="submit"], li.bypostauthor cite span {
+	color: #523E41;
+}
+button, input, textarea {
+	background-color: rgba(255,255,255,.1);
+	border: 1px solid #564C49;
+	color: #564C49;
+}
+#colophon {
+	text-align: center;
+	border-top: 5px solid #EDECBE;
+	border-bottom: 5px solid #EDECBE;
+	background: url(images/pinkBk.png) left bottom repeat-x;
+}
+#colophon a {
+	color: #EDECBE;
+	text-decoration: none;
+}
+#colophon a:hover {
+	color: rgba(255,255,255,.5);
+}
+caption, th, td {
+	color: #EDEDED;
+}
+.comments-area article header time {
+	color: #EDECAE;
+}
+.entry-content td, .comment-content td,
+.entry-content table, .comment-content table {
+	border-color: #EDECAE;
+}
+ins {
+	background-color: rgba(255,255,255,.3);
+}
+.entry-content pre, .comment-content pre {
+	color: rgba(255,255,255,.5);
+}
+.comments-area article header cite a,
+a.comment-reply-link, 
+a.comment-edit-link {
+	color: #FAA0A0;
+}
+.comments-area article header cite a:hover,
+a.comment-reply-link:hover, 
+a.comment-edit-link:hover,
+#respond form p.form-allowed-tags {
+	color: rgba(255,255,255,.5);
+}
+.comments-area li.bypostauthor cite span {
+	background-color: rgba(255,255,255,.5);
+	border-color: rgba(255,255,255,.5);
+}
+
+.menu-toggle, 
+input[type="submit"], 
+input[type="button"], 
+input[type="reset"], 
+article.post-password-required input[type="submit"] {
+	border-radius: 0;
+	border-color: #EDECBE;
+	border-style: solid;
+	border-width: 3px 0;
+	color: #EDECBE;
+	background-color: #DF4E6D;
+	box-shadow: none;
+
+	background-repeat: repeat-x;
+	background-image: none;
+	background-image: none;
+	background-image: none;
+	background-image: none;
+	background-image: none;
+}
+
+.menu-toggle:hover, 
+input[type="submit"]:hover, 
+input[type="button"]:hover, 
+input[type="reset"]:hover, 
+article.post-password-required input[type="submit"]:hover,
+.menu-toggle:active, 
+.menu-toggle.toggled-on, 
+button:active, 
+input[type="submit"]:active, 
+input[type="button"]:active, 
+input[type="reset"]:active {
+	border-radius: 0;
+	border-color: #fff;
+	color: #fff;
+	background-color: #C21954;
+	box-shadow: none;
+
+	background-image: none;
+	background-image: none;
+	background-image: none;
+	background-image: none;
+	background-image: none;
+}
+
+.archive-header, .page-header {
+	border-color: #EDECBE;
+}
+
+#secondary #searchsubmit {
+	display: none;
+}
+.widget-area #s {
+	width: 90%;
+}
+
+@media screen and (max-width: 800px) {
+	#masthead h1 a, #masthead h1 a:hover {
+		color: #DF4E6D;
+	}
+	#masthead h1,
+	#masthead h2 {
+		background: none;
+		right: 25px;
+		width: auto;
+		top: 95px;
+		text-shadow: 1px 1px 0 rgba(255,255,255,.8);
+	}
+	#masthead {
+		background-image: url("images/houses.png");
+	}
+	#masthead h2 {
+		top: 70px;
+	}
+}
+
+@media screen and (max-width:600px) {
+	#site-navigation {
+		background: #DF4E6D;
+	}
+
+	.main-navigation ul > li a:after {
+		content: normal;
+	}
+
+	.main-navigation li a {
+		line-height: 2.5em;
+	}
+
+}
