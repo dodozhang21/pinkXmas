@@ -32,7 +32,7 @@ add_action( 'after_setup_theme', 'pinkXmas_setup' );
 function pinkXmas_scripts() {
 	wp_enqueue_script( 'jquery' );
 
-	wp_enqueue_script( 'tinynav', get_stylesheet_directory_uri() . '/js/jquery.snowfall.min.js', array( 'jquery' ), '20130420', true );
+	wp_enqueue_script( 'snowfall', get_stylesheet_directory_uri() . '/js/jquery.snowfall.min.js', array( 'jquery' ), '20130420', true );
 
 	wp_enqueue_style( 'googleFonts', '//fonts.googleapis.com/css?family=ABeeZee|Leckerli One' );
 

@@ -1,6 +1,6 @@
 /*
 Theme Name: Pink Xmas
-Theme URI: http://pure-essence.net/2013/04/18/child-theme-for-twenty-twelve-casually
+Theme URI: http://pure-essence.net/2013/04/24/child-theme-for-twenty-twelve-pink-xmas
 Author: Ying Zhang
 Author URI: http://regretless.com/
 Description: Pink Xmas builds off of Twenty Twelve, so you get all of the goodness of a WordPress core theme included.
@@ -36,6 +36,11 @@ html body .site {
 	margin: 25px auto;
 	padding: 0;
 	box-shadow: none;
+}
+
+/* hide custom header */
+img.header-image {
+	display: none;
 }
 
 body a {
@@ -377,6 +382,27 @@ input[type="reset"]:active {
 }
 .widget-area #s {
 	width: 90%;
+}
+
+/* infinite scroll */
+body #infinite-footer {
+	z-index: 101;
+}
+body #infinite-footer .container,
+body #infinite-handle span {
+	background-color: rgba( 137, 118, 103, 0.8 );
+	color: #493D32;
+	border: 0;
+}
+body #infinite-footer .blog-credits,
+body #infinite-footer .blog-credits a,
+body #infinite-footer .blog-credits a:hover,
+body #infinite-footer .blog-info a,
+body #infinite-footer .blog-info a:hover {
+	color: #493D32;
+}
+body.infinite-scroll .infinite-wrap .hentry:last-child {
+	border-bottom: 0;
 }
 
 @media screen and (max-width: 800px) {
